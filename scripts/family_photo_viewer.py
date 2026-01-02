@@ -93,8 +93,8 @@ for photo in selected_photos:
 
 # Generate index.html outside photos folder
 with open(output_html, "w", encoding="utf-8") as f:
-    f.write("<html><head><title>Family Photo Viewer</title></head><body>\n")
-    f.write("<h1>Family Photo Viewer</h1>\n")
+    f.write("<html><head><title>Family Photos — This Week in History</title></head><body>\n")
+    f.write("<h1>Family Photos — This Week in History</h1>\n")
     for photo_file in photos_folder.iterdir():
         if photo_file.suffix.lower() == ".jpg":
             # Add path relative to HTML
