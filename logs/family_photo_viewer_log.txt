@@ -1,0 +1,25 @@
+[main a1cccd8] Update FamilyPhotoViewer 2026-01-02
+ 13 files changed, 16 insertions(+), 8 deletions(-)
+ create mode 100644 logs/family_photo_viewer_log.txt
+ create mode 100644 photos/DCP_3057.jpg
+ delete mode 100644 photos/DCP_3058.jpg
+ create mode 100644 photos/IMG_0145.jpg
+ delete mode 100644 photos/IMG_0148.jpg
+ delete mode 100644 photos/IMG_0788.jpg
+ delete mode 100644 photos/IMG_1544.jpg
+ create mode 100644 photos/IMG_1551.jpg
+ delete mode 100644 photos/IMG_4293.jpg
+ create mode 100644 photos/IMG_6771.jpg
+ create mode 100644 photos/IMG_9143.jpg
+ create mode 100644 run_family_photo_viewer.bat
+To https://github.com/SAK70Games/FamilyPhotoViewer.git
+   7d2e7e0..a1cccd8  main -> main
+Found 68 candidate photos from last 7 days relative to each year.
+Selected 5 photos:
+Copied: IMG_9143.JPG
+Copied: IMG_0145.JPG
+Copied: DCP_3057.JPG
+Copied: IMG_1551.JPG
+Copied: IMG_6771.JPG
+index.html generated at: D:\FamilyPhotoViewer\index.html
+Pushed latest photos and index.html to GitHub!
