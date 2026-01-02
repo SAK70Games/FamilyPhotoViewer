@@ -14,7 +14,7 @@ import pillow_heif
 # ===== CONFIG =====
 archive_root = Path(r"D:\Pictures")
 photos_folder = Path(r"D:\FamilyPhotoViewer\photos")  # Images only
-output_html = Path("D:\FamilyPhotoViewer\index.html")  # HTML outside photos
+output_html = Path(r"D:\FamilyPhotoViewer\index.html")  # HTML outside photos
 num_photos_per_day = 5
 days_to_look_back = 7
 supported_extensions = {'.jpg', '.jpeg', '.heic', '.png'}
@@ -40,7 +40,7 @@ def convert_heic_to_jpg(src_path, dest_path):
 # ===== MAIN =====
 candidate_photos = []
 
-for year in range(2003, 2026):
+for year in range(2003, 2051):  # you can go way out into the future
     year_path = archive_root / str(year)
     if not year_path.exists():
         continue
@@ -76,13 +76,20 @@ print(f"Found {len(candidate_photos)} candidate photos from last {days_to_look_b
 selected_photos = random.sample(candidate_photos, min(num_photos_per_day, len(candidate_photos)))
 print(f"Selected {len(selected_photos)} photos:")
 
+# Keep track of original year with each selected photo
+selected_photos_with_year = []
+for photo in selected_photos:
+    # parent folder two levels up = year
+    original_year = photo.parents[1].name
+    selected_photos_with_year.append((photo, original_year))
+
 # Clear photos folder
 for existing_file in photos_folder.iterdir():
     if existing_file.is_file():
         existing_file.unlink()
 
 # Copy / convert photos
-for photo in selected_photos:
+for photo, _ in selected_photos_with_year:
     dest_file = photos_folder / (photo.stem + ".jpg")
     if photo.suffix.lower() == '.heic':
         convert_heic_to_jpg(photo, dest_file)
@@ -95,10 +102,10 @@ for photo in selected_photos:
 with open(output_html, "w", encoding="utf-8") as f:
     f.write("<html><head><title>Family Photos — This Week in History</title></head><body>\n")
     f.write("<h1>Family Photos — This Week in History</h1>\n")
-    for photo_file in photos_folder.iterdir():
-        if photo_file.suffix.lower() == ".jpg":
-            # Add path relative to HTML
-            f.write(f'<img src="photos/{photo_file.name}" style="max-width:100%;margin-bottom:10px;"><br>\n')
+    for photo, original_year in selected_photos_with_year:
+        photo_file = photos_folder / (photo.stem + ".jpg")
+        f.write(f'<h3>{original_year}</h3>\n')  # <-- Original year above each photo
+        f.write(f'<img src="photos/{photo_file.name}" style="max-width:100%;margin-bottom:10px;"><br>\n')
     f.write("</body></html>\n")
 
 print(f"index.html generated at: {output_html}")
@@ -118,4 +125,3 @@ subprocess.run(["git", "commit", "-m", commit_message], check=True)
 subprocess.run(["git", "push", "origin", "main"], check=True)
 
 print("Pushed latest photos and index.html to GitHub!")
-
