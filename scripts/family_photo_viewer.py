@@ -3,6 +3,7 @@ import shutil
 import random
 from datetime import datetime, timedelta
 from pathlib import Path
+import subprocess
 
 # Optional: install these first if HEIC support is needed
 # pip install pillow pillow-heif
@@ -101,3 +102,20 @@ with open(output_html, "w", encoding="utf-8") as f:
     f.write("</body></html>\n")
 
 print(f"index.html generated at: {output_html}")
+
+# ===== GIT PUSH =====
+repo_path = Path(r"D:\FamilyPhotoViewer")
+os.chdir(repo_path)
+
+# Stage all changes (photos + index.html)
+subprocess.run(["git", "add", "."], check=True)
+
+# Commit with today's date
+commit_message = f"Update FamilyPhotoViewer {today.strftime('%Y-%m-%d')}"
+subprocess.run(["git", "commit", "-m", commit_message], check=True)
+
+# Push to GitHub
+subprocess.run(["git", "push", "origin", "main"], check=True)
+
+print("Pushed latest photos and index.html to GitHub!")
+
