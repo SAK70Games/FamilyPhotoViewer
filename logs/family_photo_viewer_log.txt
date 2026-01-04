@@ -69,3 +69,24 @@ Copied: IMG_0759.JPG
 Copied: DCP_3067.JPG
 index.html generated at: D:\FamilyPhotoViewer\index.html
 Pushed latest photos and index.html to GitHub!
+[main d19aa74] Update FamilyPhotoViewer 2026-01-03
+ 9 files changed, 8 insertions(+), 8 deletions(-)
+ delete mode 100644 photos/DCP_3067.jpg
+ delete mode 100644 photos/IMG_0724.jpg
+ delete mode 100644 photos/IMG_0740.jpg
+ delete mode 100644 photos/IMG_0759.jpg
+ create mode 100644 photos/IMG_1553.jpg
+ create mode 100644 photos/IMG_4300.jpg
+ create mode 100644 photos/IMG_4489.jpg
+ create mode 100644 photos/IMG_9142.jpg
+To https://github.com/SAK70Games/FamilyPhotoViewer.git
+   ade5bb7..d19aa74  main -> main
+Found 106 candidate photos from last 7 days relative to each year.
+Selected 5 photos:
+Copied: IMG_4300.JPG
+Copied: IMG_6778.JPG
+Copied: IMG_4489.JPG
+Copied: IMG_9142.JPG
+Copied: IMG_1553.JPG
+index.html generated at: D:\FamilyPhotoViewer\index.html
+Pushed latest photos and index.html to GitHub!
