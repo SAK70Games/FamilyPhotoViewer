@@ -2373,3 +2373,27 @@ Copied: IMG_4919.JPG
 Copied: IMG_9879.JPG
 index.html generated at: D:\FamilyPhotoViewer\index.html
 Pushed latest photos and index.html to GitHub!
+warning: in the working copy of 'logs/family_photo_viewer_log.txt', LF will be replaced by CRLF the next time Git touches it
+[main b873859] Update FamilyPhotoViewer 2026-04-15
+ 12 files changed, 31 insertions(+), 9 deletions(-)
+ delete mode 100644 photos/DCP_1322.jpg
+ create mode 100644 photos/IMG_0027.jpg
+ create mode 100644 photos/IMG_2360.jpg
+ create mode 100644 photos/IMG_2383.jpg
+ delete mode 100644 photos/IMG_2391.jpg
+ delete mode 100644 photos/IMG_4887.jpg
+ delete mode 100644 photos/IMG_4919.jpg
+ create mode 100644 photos/IMG_9622.jpg
+ create mode 100644 photos/IMG_9637.jpg
+ delete mode 100644 photos/IMG_9879.jpg
+To https://github.com/SAK70Games/FamilyPhotoViewer.git
+   b2b7431..b873859  main -> main
+Found 271 candidate photos from last 7 days relative to each year.
+Selected 5 photos:
+Copied: IMG_9622.JPG
+Copied: IMG_2383.JPG
+Copied: IMG_0027.JPG
+Copied: IMG_2360.JPG
+Copied: IMG_9637.JPG
+index.html generated at: D:\FamilyPhotoViewer\index.html
+Pushed latest photos and index.html to GitHub!
