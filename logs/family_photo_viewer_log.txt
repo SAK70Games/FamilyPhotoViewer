@@ -2953,3 +2953,33 @@ Copied: IMG_7859.JPG
 Copied: IMG_7404.JPG
 index.html generated at: D:\FamilyPhotoViewer\index.html
 Pushed latest photos and index.html to GitHub!
+warning: in the working copy of 'logs/family_photo_viewer_log.txt', LF will be replaced by CRLF the next time Git touches it
+[main 87ef60f] Update FamilyPhotoViewer 2026-05-11
+ 12 files changed, 33 insertions(+), 9 deletions(-)
+ create mode 100644 photos/DCP_3986.jpg
+ create mode 100644 photos/IMG_0824.jpg
+ create mode 100644 photos/IMG_3376.jpg
+ delete mode 100644 photos/IMG_5291.jpg
+ delete mode 100644 photos/IMG_5442.jpg
+ delete mode 100644 photos/IMG_7403.jpg
+ delete mode 100644 photos/IMG_7404.jpg
+ delete mode 100644 photos/IMG_7859.jpg
+ create mode 100644 photos/IMG_7896.jpg
+ create mode 100644 photos/IMG_9840.jpg
+fatal: unable to access 'https://github.com/SAK70Games/FamilyPhotoViewer.git/': Failed to connect to github.com port 443 after 22716 ms: Couldn't connect to server
+Found 284 candidate photos from last 7 days relative to each year.
+Selected 5 photos:
+Copied: IMG_9840.JPG
+Copied: IMG_3376.JPG
+Copied: DCP_3986.JPG
+Copied: IMG_7896.JPG
+Copied: IMG_0824.JPG
+index.html generated at: D:\FamilyPhotoViewer\index.html
+Traceback (most recent call last):
+  File "D:\FamilyPhotoViewer\scripts\family_photo_viewer.py", line 125, in <module>
+    subprocess.run(["git", "push", "origin", "main"], check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scott\AppData\Local\Python\pythoncore-3.14-64\Lib\subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 128.
