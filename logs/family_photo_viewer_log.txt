@@ -2983,3 +2983,27 @@ Traceback (most recent call last):
     raise CalledProcessError(retcode, process.args,
                              output=stdout, stderr=stderr)
 subprocess.CalledProcessError: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 128.
+warning: in the working copy of 'logs/family_photo_viewer_log.txt', LF will be replaced by CRLF the next time Git touches it
+[main 36233a3] Update FamilyPhotoViewer 2026-05-12
+ 12 files changed, 39 insertions(+), 9 deletions(-)
+ delete mode 100644 photos/DCP_3986.jpg
+ delete mode 100644 photos/IMG_0824.jpg
+ create mode 100644 photos/IMG_2317.jpg
+ create mode 100644 photos/IMG_2561.jpg
+ delete mode 100644 photos/IMG_3376.jpg
+ create mode 100644 photos/IMG_3377.jpg
+ create mode 100644 photos/IMG_7394.jpg
+ create mode 100644 photos/IMG_7854.jpg
+ delete mode 100644 photos/IMG_7896.jpg
+ delete mode 100644 photos/IMG_9840.jpg
+To https://github.com/SAK70Games/FamilyPhotoViewer.git
+   8e34445..36233a3  main -> main
+Found 249 candidate photos from last 7 days relative to each year.
+Selected 5 photos:
+Copied: IMG_7854.JPG
+Copied: IMG_3377.JPG
+Copied: IMG_2317.JPG
+Copied: IMG_7394.JPG
+Copied: IMG_2561.JPG
+index.html generated at: D:\FamilyPhotoViewer\index.html
+Pushed latest photos and index.html to GitHub!
