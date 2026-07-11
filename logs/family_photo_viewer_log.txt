@@ -4244,3 +4244,45 @@ Copied: DCP_1963.JPG
 Copied: IMG_1302.JPG
 index.html generated at: D:\FamilyPhotoViewer\index.html
 Pushed latest photos and index.html to GitHub!
+warning: in the working copy of 'logs/family_photo_viewer_log.txt', LF will be replaced by CRLF the next time Git touches it
+[main a149e3c] Update FamilyPhotoViewer 2026-07-09
+ 12 files changed, 33 insertions(+), 9 deletions(-)
+ create mode 100644 photos/DCP_0016.jpg
+ delete mode 100644 photos/DCP_0019.jpg
+ delete mode 100644 photos/DCP_1963.jpg
+ create mode 100644 photos/DCP_1989.jpg
+ delete mode 100644 photos/IMG_1302.jpg
+ delete mode 100644 photos/IMG_3634.jpg
+ create mode 100644 photos/IMG_7273.jpg
+ create mode 100644 photos/IMG_7327.jpg
+ delete mode 100644 photos/IMG_7921.jpg
+ create mode 100644 photos/IMG_8375.jpg
+To https://github.com/SAK70Games/FamilyPhotoViewer.git
+   f605dca..a149e3c  main -> main
+Found 494 candidate photos from last 7 days relative to each year.
+Selected 5 photos:
+Copied: IMG_7273.JPG
+Copied: DCP_1989.JPG
+Copied: IMG_7327.JPG
+Copied: DCP_0016.JPG
+Copied: IMG_8375.JPG
+index.html generated at: D:\FamilyPhotoViewer\index.html
+Pushed latest photos and index.html to GitHub!
+Found 472 candidate photos from last 7 days relative to each year.
+Selected 5 photos:
+Copied: IMG_7251.JPG
+Traceback (most recent call last):
+  File "D:\FamilyPhotoViewer\scripts\family_photo_viewer.py", line 95, in <module>
+    convert_heic_to_jpg(photo, dest_file)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\FamilyPhotoViewer\scripts\family_photo_viewer.py", line 31, in convert_heic_to_jpg
+    heif_file = pillow_heif.read_heif(str(src_path))
+  File "C:\Users\scott\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pillow_heif\heif.py", line 574, in read_heif
+    ret = HeifFile(fp, convert_hdr_to_8bit, bgr_mode, reload_size=True, **kwargs)
+  File "C:\Users\scott\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pillow_heif\heif.py", line 262, in __init__
+    images = _pillow_heif.load_file(
+        fp_bytes,
+    ...<7 lines>...
+        options.DISABLE_SECURITY_LIMITS,
+    )
+ValueError: Invalid input: No 'ftyp' box: File does not start with 'ftyp' box.
