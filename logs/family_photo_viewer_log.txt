@@ -4286,3 +4286,27 @@ Traceback (most recent call last):
         options.DISABLE_SECURITY_LIMITS,
     )
 ValueError: Invalid input: No 'ftyp' box: File does not start with 'ftyp' box.
+warning: in the working copy of 'logs/family_photo_viewer_log.txt', LF will be replaced by CRLF the next time Git touches it
+[main cfd270e] Update FamilyPhotoViewer 2026-07-11
+ 12 files changed, 52 insertions(+), 10 deletions(-)
+ delete mode 100644 photos/DCP_0016.jpg
+ delete mode 100644 photos/DCP_1989.jpg
+ create mode 100644 photos/DCP_4452.jpg
+ create mode 100644 photos/IMG_0497.jpg
+ create mode 100644 photos/IMG_2957.jpg
+ create mode 100644 photos/IMG_3303.jpg
+ create mode 100644 photos/IMG_5779.jpg
+ delete mode 100644 photos/IMG_7273.jpg
+ delete mode 100644 photos/IMG_7327.jpg
+ delete mode 100644 photos/IMG_8375.jpg
+To https://github.com/SAK70Games/FamilyPhotoViewer.git
+   a149e3c..cfd270e  main -> main
+Found 345 candidate photos from last 7 days relative to each year.
+Selected 5 photos:
+Copied: IMG_5779.JPG
+Copied: DCP_4452.JPG
+Copied: IMG_0497.JPG
+Copied: IMG_3303.JPG
+Copied: IMG_2957.JPG
+index.html generated at: D:\FamilyPhotoViewer\index.html
+Pushed latest photos and index.html to GitHub!
