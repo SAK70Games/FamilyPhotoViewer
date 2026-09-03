@@ -5475,3 +5475,38 @@ Copied: IMG_7888.JPG
 Copied: IMG_1590.JPG
 index.html generated at: D:\FamilyPhotoViewer\index.html
 Pushed latest photos and index.html to GitHub!
+warning: in the working copy of 'logs/family_photo_viewer_log.txt', LF will be replaced by CRLF the next time Git touches it
+[main 4299ef9] Update FamilyPhotoViewer 2026-09-01
+ 12 files changed, 34 insertions(+), 10 deletions(-)
+ create mode 100644 photos/DCP_2403.jpg
+ delete mode 100644 photos/IMG_0868.jpg
+ delete mode 100644 photos/IMG_1590.jpg
+ create mode 100644 photos/IMG_1735.jpg
+ create mode 100644 photos/IMG_1767.jpg
+ create mode 100644 photos/IMG_3272.jpg
+ delete mode 100644 photos/IMG_3725.jpg
+ create mode 100644 photos/IMG_5679.jpg
+ delete mode 100644 photos/IMG_7888.jpg
+ delete mode 100644 photos/IMG_9157.jpg
+To https://github.com/SAK70Games/FamilyPhotoViewer.git
+   ac1d94d..4299ef9  main -> main
+Found 197 candidate photos from last 7 days relative to each year.
+Selected 5 photos:
+Copied: IMG_1767.JPG
+Copied: DCP_2403.JPG
+Copied: IMG_5679.JPG
+Copied: IMG_1735.JPG
+Copied: IMG_3272.JPG
+index.html generated at: D:\FamilyPhotoViewer\index.html
+Pushed latest photos and index.html to GitHub!
+Found 187 candidate photos from last 7 days relative to each year.
+Selected 5 photos:
+Copied: IMG_0933.JPG
+Traceback (most recent call last):
+  File "D:\FamilyPhotoViewer\scripts\family_photo_viewer.py", line 96, in <module>
+    print(f"Converted HEIC \u2192 JPG: {photo.name}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scott\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 15: character maps to <undefined>
