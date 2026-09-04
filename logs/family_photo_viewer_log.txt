@@ -5510,3 +5510,26 @@ Traceback (most recent call last):
     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 15: character maps to <undefined>
+warning: in the working copy of 'logs/family_photo_viewer_log.txt', LF will be replaced by CRLF the next time Git touches it
+[main 8d001fb] Update FamilyPhotoViewer 2026-09-03
+ 11 files changed, 44 insertions(+), 9 deletions(-)
+ create mode 100644 photos/DCP_2395.jpg
+ create mode 100644 photos/DCP_2397.jpg
+ delete mode 100644 photos/DCP_2403.jpg
+ delete mode 100644 photos/IMG_1735.jpg
+ delete mode 100644 photos/IMG_1767.jpg
+ delete mode 100644 photos/IMG_3272.jpg
+ create mode 100644 photos/IMG_3889.jpg
+ rename photos/{IMG_5679.jpg => IMG_5681.jpg} (53%)
+ create mode 100644 photos/PQQL3010.jpg
+To https://github.com/SAK70Games/FamilyPhotoViewer.git
+   4299ef9..8d001fb  main -> main
+Found 158 candidate photos from last 7 days relative to each year.
+Selected 5 photos:
+Copied: IMG_5681.JPG
+Copied: DCP_2395.JPG
+Copied: DCP_2397.JPG
+Copied: PQQL3010.JPEG
+Copied: IMG_3889.JPG
+index.html generated at: D:\FamilyPhotoViewer\index.html
+Pushed latest photos and index.html to GitHub!
