@@ -6691,3 +6691,27 @@ Copied: IMG_4415.JPG
 Copied: Cheri's Iphone 086.JPG
 index.html generated at: D:\FamilyPhotoViewer\index.html
 Pushed latest photos and index.html to GitHub!
+warning: in the working copy of 'logs/family_photo_viewer_log.txt', LF will be replaced by CRLF the next time Git touches it
+[main ef3b147] Update FamilyPhotoViewer 2026-10-26
+ 12 files changed, 31 insertions(+), 7 deletions(-)
+ delete mode 100644 photos/Cheri's Iphone 041.jpg
+ delete mode 100644 photos/Cheri's Iphone 077.jpg
+ delete mode 100644 photos/Cheri's Iphone 086.jpg
+ create mode 100644 photos/Cheri's Iphone 131.jpg
+ create mode 100644 photos/Cheri's Iphone 137.jpg
+ create mode 100644 photos/DCP_5226.jpg
+ create mode 100644 photos/IMG_3734.jpg
+ delete mode 100644 photos/IMG_4415.jpg
+ create mode 100644 photos/IMG_4494.jpg
+ delete mode 100644 photos/ark2x2.jpg
+To https://github.com/SAK70Games/FamilyPhotoViewer.git
+   181a3ce..ef3b147  main -> main
+Found 518 candidate photos from last 7 days relative to each year.
+Selected 5 photos:
+Copied: Cheri's Iphone 137.JPG
+Copied: Cheri's Iphone 131.JPG
+Copied: DCP_5226.JPG
+Copied: IMG_4494.JPG
+Copied: IMG_3734.JPG
+index.html generated at: D:\FamilyPhotoViewer\index.html
+Pushed latest photos and index.html to GitHub!
